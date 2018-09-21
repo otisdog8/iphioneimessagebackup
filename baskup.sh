@@ -20,11 +20,11 @@ while getopts ":a" opt; do
 done
 
 function select_rows () {
-  sqlite3 /Users/otisroot/Desktop/ff0147459e199696a5bb73b44d994da986f8aa94/3d/3d0d7e5fb2ce288813306e4d4636395e047a3d28 "$1"
+  sqlite3 #path to sms backup file "$1"
 }
 
 function select_other_rows () {
-  sqlite3 /Users/otisroot/Desktop/ff0147459e199696a5bb73b44d994da986f8aa94/Manifest.db "$1"
+  sqlite3 #Path to manifest.db "$1"
 }
 
 
